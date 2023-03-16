@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border-collapse: collapse;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%
+}
+
+html, body{
+    width: 100%;
+}
+
+body{
+    font-size: 1.5rem;
+}
+
+:root{
+    --cor-verde: #35a978;
+    --cor-cinza: #323637;
+    --cor-cinza-claro:#939798;
+    --cor-branco: #fff;
+    --cor-preto: black;
+    --fonte-principal: 'DM Sans', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+/* Indicação - Início */
+
+.indicacao{
+    background: var(--cor-verde);
+    color: var(--cor-branco);
+    font-size: 2rem;
+    text-align: center;
+    font-family: var(--fonte-principal);
+    padding: 0.5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.indicacao img{
+    width: 3rem;
+}
+
+.indicacao a{
+    color: var(--cor-verde);
+    font-family: var(--fonte-principal);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background: var(--cor-branco);
+    transition: all 0.2s;
+}
+
+.indicacao a:hover{
+    transform: scale(1.05);
+}
+
+/* Indicação - Fim */
+
+/* Cabecalho - Início */
+
+.cabecalho{
+    width: 100%;
+    background: var(--cor-cinza);
+}
+
+.cabecalho>div{
+    width: 95%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    /* border: 1px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.cassino-esportes{
+    display: flex;
+    width: 25rem;
+    /* border: 1px solid red; */
+}
+
+.cassino-esportes a{
+    padding: 1rem;
+    color: var(--cor-branco);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    gap: 1rem;
+    transition: all 0.2s;
+}
+
+.cassino-esportes a:hover{
+    transform: scale(1.05);
+}
+
+.cassino-esportes a img{
+    width: 3rem;
+}
+
+.cassino-esportes a.borda-azul{
+    border-bottom: 0.3rem solid var(--cor-verde);
+}
+
+.cabecalho-interno{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 5rem;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-interno>div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.cabecalho-interno>div:nth-of-type(2){
+    gap: 3rem;
+}
+
+.botao-menu{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.botao-menu:hover{
+    transform: scale(1.1);
+}
+
+.botao-menu span{
+    width: 4rem;
+    height: 0.3rem;
+    border-radius: 1rem;
+    background: var(--cor-branco);
+}
+
+.cabecalho-interno a{
+    transition: all 0.2s;
+}
+
+.cabecalho-interno a:hover{
+    transform: scale(1.1);
+}
+
+.cabecalho-interno img{
+    width: 10rem;
+}
+
+.area-login{
+    /* border: 1px solid red; */
+}
+
+.area-login{
+    font-size: 2rem;
+    font-family: var(--fonte-principal);
+}
+
+.area-login a{
+    /* border: 1px solid red; */
+    color: var(--cor-branco);
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-login a img{
+    width: 2rem;
+}
+
+.area-login a:last-child{
+    background: var(--cor-verde);
+    padding: 1rem;
+    color: var(--cor-preto);
+    border-radius: 0.5rem;
+}
+
+/* Cabecalho - Fim */
