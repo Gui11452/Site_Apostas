@@ -16,7 +16,59 @@ html{
     /*font-size: 62.5%*/
 }
 
+#carouselExampleIndicators{
+    width: 90%;
+    margin: 20px auto;
+}
 
+#carouselExampleIndicators img{
+    object-fit: cover;
+}
+
+.login{
+    height: auto !important;
+    padding: 2rem 0;
+}
+
+.login .icones{
+    gap: 5px !important;
+}
+
+.login input{
+    font-size: 14px !important;
+}
+
+.login p, .login label, .login a{
+    color: white !important;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+
+.h-custom {
+    height: calc(100% - 73px);
+}
+
+@media (max-width: 450px) {
+
+    .h-custom {
+        height: 100%;
+    }
+
+    .login p, .login label, .login input{
+        font-size: 10px !important;
+    }
+
+    .login i{
+        font-size: 15px !important;
+    }
+
+}
 
 :root{
     --cor-verde: #35a978;
@@ -28,49 +80,128 @@ html{
     --fonte-secundaria: 'Montserrat', sans-serif;
 }
 
-
-
 /* Indicação - Início */
 
+div.indicacao-ocultar{
+    display: none;
+}
+
 .indicacao{
+    width: 100%;
     background: var(--cor-verde);
+    position: relative;
+}
+
+.indicacao>div:nth-of-type(1){
+    width: 90%;
+    margin: 0 auto;
     color: var(--cor-branco);
-    font-size: 1.1rem;
+    font-size: 15px;
     text-align: center;
     font-family: var(--fonte-principal);
-    padding: 0.5rem;
     display: flex;
     flex-flow: row wrap;
+    padding: 10px;
     justify-content: center;
-    align-items: center;
-    gap: 1rem;
+    align-items: center; 
+    gap: 10px;
+    position: relative;
+}
+
+.indicacao p{
+    margin-bottom: 0px !important;
 }
 
 .indicacao img{
-    width: 3rem;
+    width: 30px;
 }
 
 .indicacao a{
     color: var(--cor-verde);
     font-family: var(--fonte-principal);
-    padding: 0.5rem;
-    border-radius: 1rem;
+    padding: 5px;
+    border-radius: 10px;
     background: var(--cor-branco);
     transition: all 0.2s;
+    text-decoration: none !important;
 }
 
 .indicacao a:hover{
     transform: scale(1.05);
 }
 
+.indicacao .x{
+    color: var(--cor-cinza-claro);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    top: 2px;
+    right: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.indicacao .x:hover{
+    transform: scale(1.05);
+}
+
+.indicacao .x span{
+    display: inline-block;
+    width: 25px;
+    height: 5px;
+    background: black;
+    border-radius: 10px;
+}
+
+.indicacao .x span:nth-child(1){
+    transform: translateY(0) rotate(45deg);
+}
+
+.indicacao .x span:nth-child(2){
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+@media (max-width: 530px){
+    .indicacao .x{
+        top: 65px;
+        right: 5px;
+    }
+}
+
 /* Indicação - Fim */
 
+.card a{
+    background: var(--cor-verde) !important;
+    color: white !important;
+    border: none !important;
+    transition: .2s !important;
+}
 
+.card-body{
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    gap: 5px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+}
+
+.card a:hover{
+    background: white !important;
+    color: var(--cor-verde) !important;
+}
+
+.d-flex{
+    gap: 30px !important;
+}
 
 .marginLeft{
     margin-left: 10px;
 }
-
 
 .imgCard{
     border-radius: 32px;

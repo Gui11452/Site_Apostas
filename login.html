@@ -17,7 +17,7 @@
     <link rel="icon" href="images/logo1.png">
 
 
-    <title> JOGUEIAI.BET </title>
+    <title> Login </title>
 </head>
 
 <body style="background-color: #323637;">
@@ -31,16 +31,12 @@
             <a href="#">
                 Resgatar
             </a>
-        </div>
-        <div class="x">
-            <span></span>
-            <span></span>
+            <div class="x">
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </div>
-
-    <!-- ************************************************************************************************** -->
-    <!-- MENU DE NAVEGAÇÃO -->
-    <!-- ************************************************************************************************** -->
 
     <header>
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
@@ -93,149 +89,76 @@
         </nav>
     </header>
 
-    <!-- ************************************************************************************************** -->
-    <!-- CAROSSEL IMAGENS -->
-    <!-- ************************************************************************************************** -->
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-
-        <!-- Início indicadores para navegar nos slides do carousel -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
+    <section class="vh-100 login">
+        <div class="container-fluid h-custom">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                class="img-fluid" alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+              <form>
+                <div class="icones d-flex flex-row align-items-center justify-content-center">
+                  <p class="lead fw-normal mb-0 me-3">Entre com</p>
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+      
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </button>
+      
+                  <button type="button" class="btn btn-primary btn-floating mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </button>
+                </div>
+      
+                <div class="divider d-flex align-items-center my-4">
+                  <p class="text-center fw-bold mx-3 mb-0">OU</p>
+                </div>
+      
+                <!-- Email input -->
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form3Example3">E-mail: </label>
+                    <input type="email" id="form3Example3" class="form-control form-control-lg"
+                    placeholder="Digite um e-mail válido" />
+                </div>
+      
+                <!-- Password input -->
+                <div class="form-outline mb-3">
+                    <label class="form-label" for="form3Example4">Senha: </label>
+                    <input type="password" id="form3Example4" class="form-control form-control-lg"
+                    placeholder="Digite a sua senha" />
+                </div>
+      
+                <div class="d-flex justify-content-between align-items-center">
+                  <!-- Checkbox -->
+                  <div class="form-check mb-0">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                    <label class="form-check-label" for="form2Example3">
+                      Lembrar de mim
+                    </label>
+                  </div>
+                  <a href="#!" class="text-body">Esqueceu a senha?</a>
+                </div>
+      
+                <div class="text-center text-lg-start mt-4 pt-2">
+                  <button type="button" class="btn btn-primary btn-lg"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+                  <p class="small fw-bold mt-2 pt-1 mb-0">Não tem uma conta? <a href="#!"
+                      class="link-danger">Registre-se</a></p>
+                </div>
+      
+              </form>
+            </div>
+          </div>
         </div>
-        <!-- Fim indicadores para navegar nos slides do carousel -->
-
-        <!-- Início slide carousel -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/carousel/img-1.jpeg" class="d-block w-100" alt="Categoria 1"
-                style="border-radius: 10px;">
-            </div>
-            <div class="carousel-item">
-                <img src="images/carousel/img-2.jpg" class="d-block w-100" alt="Categoria 2"
-                style="border-radius: 10px;">
-            </div>
-            <div class="carousel-item">
-                <img src="images/carousel/img-3.jpg" class="d-block w-100" alt="Categoria 3"
-                style="border-radius: 10px;">
-            </div>
-        </div>
-        <!-- Fim slide carousel -->
-
-        <!-- Início anterior e próximo slide carousel -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-        <!-- Fim anterior e próximo slide carousel -->
-
-    </div>
-
-
-    <div class="d-flex flex-wrap justify-content-evenly p-5">
-        <img class="imgCard" src="/images/play.jpg" alt="">
-        <img class="imgCard" src="/images/play.jpg" alt="">
-        <img class="imgCard" src="/images/play.jpg" alt="">
-    </div>
-
-    <div class="d-flex flex-wrap justify-content-evenly p-5">
-
-        <div class="card" style="width: 18rem; background: black; color: white">
-            <img class="card-img-top" src="images/capa.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Pocker</h5>
-              <p class="card-text">Jogue e aposte com a maior comunidade do Brasil!</p>
-              <a href="#" 
-              class="btn btn-primary">Jogar agora!</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem; background: black; color: white">
-            <img class="card-img-top" src="images/capa.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Pocker</h5>
-              <p class="card-text">Jogue e aposte com a maior comunidade do Brasil!</p>
-              <a href="#" 
-              class="btn btn-primary">Jogar agora!</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem; background: black; color: white">
-            <img class="card-img-top" src="images/capa.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Pocker</h5>
-              <p class="card-text">Jogue e aposte com a maior comunidade do Brasil!</p>
-              <a href="#" 
-              class="btn btn-primary">Jogar agora!</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem; background: black; color: white">
-            <img class="card-img-top" src="images/capa.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Pocker</h5>
-              <p class="card-text">Jogue e aposte com a maior comunidade do Brasil!</p>
-              <a href="#" 
-              class="btn btn-primary">Jogar agora!</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem; background: black; color: white">
-            <img class="card-img-top" src="images/capa.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Pocker</h5>
-              <p class="card-text">Jogue e aposte com a maior comunidade do Brasil!</p>
-              <a href="#" 
-              class="btn btn-primary">Jogar agora!</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem; background: black; color: white">
-            <img class="card-img-top" src="images/capa.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Pocker</h5>
-              <p class="card-text">Jogue e aposte com a maior comunidade do Brasil!</p>
-              <a href="#" 
-              class="btn btn-primary">Jogar agora!</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem; background: black; color: white">
-            <img class="card-img-top" src="images/capa.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Pocker</h5>
-              <p class="card-text">Jogue e aposte com a maior comunidade do Brasil!</p>
-              <a href="#" 
-              class="btn btn-primary">Jogar agora!</a>
-            </div>
-        </div>
-
-    </div>
-
-
-    <!-- <a target="_blank" href="https://icons8.com/icon/571/cartas">
-        Cartas
-        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/9820/bola-de-futebol-2">
-        Bola de futebol 2
-        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        </a>
-    </a> -->
+        
+    </section>
 
 
 
-    <!-- Footer -->
     <footer class="bg-dark text-center text-white">
         <!-- Grid container -->
         <div class="container p-4">
@@ -414,8 +337,6 @@
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- Footer -->
-
 
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
