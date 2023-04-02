@@ -211,3 +211,195 @@ div.indicacao-ocultar{
     margin: 15px;
 }
 
+#carteira, #deposito{
+    width: 100%;
+    padding: 20px 0;
+}
+
+#carteira>div, #deposito>div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.minha-carteira{
+    color: var(--cor-branco);
+    background: var(--cor-preto);
+    padding: 10px;
+    min-width: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.minha-carteira>span{
+    background: var(--cor-verde);
+    color: var(--cor-branco);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.minha-carteira p{
+    color: #ccc;
+    margin: 0 !important;
+}
+
+.minha-carteira h2{
+    font-size: 50px !important;
+}
+
+.minha-carteira>div{
+    display: flex;
+    gap: 10px;
+}
+
+.minha-carteira>div a:nth-of-type(1){
+    background: var(--cor-verde);
+    color: var(--cor-preto);
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none !important;
+    transition: .3s;
+}
+
+.minha-carteira>div a:nth-of-type(2){
+    background: var(--cor-branco);
+    color: var(--cor-preto);
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none !important;
+    transition: .3s;
+}
+
+.minha-carteira>div a:hover{
+    transform: scale(1.05);
+}
+
+.minhas-transacoes{
+    background: var(--cor-preto);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.minhas-transacoes>h2{
+    color: var(--cor-verde);
+}
+
+.minhas-transacoes>div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.minhas-transacoes>div a{
+    background: transparent;
+    border: 2px solid var(--cor-verde);
+    border-radius: 2px;
+    padding: 5px 10px;
+    color: var(--cor-verde);
+    text-decoration: none !important;
+    transition: .3s;
+}
+
+.minhas-transacoes>div a:hover{
+    transform: scale(1.05);
+}
+
+.minhas-transacoes>div a.selecionado{
+    background: var(--cor-verde);
+    border: none;
+    color: var(--cor-preto);
+}
+
+.minhas-transacoes>span{
+    background:#4b4338;
+    padding: 10px;
+    color: #b98b5c;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.meu-deposito{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--cor-branco);
+    background: var(--cor-preto);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.meu-deposito>p{
+    margin: 0 !important;
+    background: var(--cor-cinza);
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.meu-deposito>span{
+    background: #862b48;
+    color: var(--cor-branco);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.meu-deposito>div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.meu-deposito a{
+    transition: .3s;
+}
+
+.meu-deposito>div a{
+    background: var(--cor-verde);
+    padding: 5px 10px;
+    color: var(--cor-preto);
+    text-decoration: none !important;
+    border-radius: 10px;
+}
+
+.meu-deposito a:hover{
+    transform: scale(1.05);
+}
+
+.meu-deposito>a{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: var(--cor-verde);
+    color: var(--cor-preto);
+    text-decoration: none !important;
+    text-align: center;
+}
+
+@media (max-width: 445px){
+    .minha-carteira{
+        min-width: 0;
+        width: 100%;
+    }
+}
+
